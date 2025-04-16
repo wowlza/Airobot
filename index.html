@@ -88,46 +88,46 @@
   </div>
 </section>
 <!-- Image carousel -->
-<section class="hero is-small">
+<section class="hero is-medium">  <!-- 增大hero高度 -->
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item" style="text-align: center;">
-        <!-- Your image here -->
-        <img src="static/images/logo_new.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Airobot
-        </h2>
+        <div class="item" style="max-width: 800px; margin: 0 auto;">  <!-- 限制图片最大宽度 -->
+          <img src="static/images/logo_new.png" alt="Airobot Logo" 
+               style="width: 100%; height: auto; border-radius: 8px;">
+          <h2 class="subtitle has-text-centered mt-3">
+            Airobot
+          </h2>
+        </div>
+        <div class="item" style="max-width: 800px; margin: 0 auto;">
+          <img src="static/images/overview_v2.png" alt="Airobot Overview"
+               style="width: 100%; height: auto; border-radius: 8px;">
+          <h2 class="subtitle has-text-centered mt-3">
+            Overview of Airobot
+          </h2>
+        </div>
       </div>
-      <div class="item" style="text-align: center;">
-        <!-- Your image here -->
-        <img src="static/images/overview_v2.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          overview of Airobot.
-        </h2>
-      </div>
+    </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/demo.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Airobot integrates edge-cloud collaboration and federated learning，ensuring both high performance and compliance with privacy constraints. By combining the cloud's task planning capabilities with the edge's lightweight model execution, it forms an intelligent, high-performance, and scalable framework.
+<!-- 视频部分增强 -->
+<section class="hero is-large">  <!-- 增大视频区域高度 -->
+  <div class="container is-fullhd">  <!-- 使用更宽的容器 -->
+    <div class="hero-body" style="padding: 3rem 0;">
+      <div class="video-container" style="max-width: 1200px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        <video poster="static/images/video-poster.jpg" id="tree" 
+               autoplay controls muted loop 
+               style="width: 100%; height: auto; aspect-ratio: 16/9;">  <!-- 保持16:9比例 -->
+          <source src="static/videos/demo.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h2 class="subtitle has-text-centered mt-5" style="max-width: 800px; margin: 0 auto;">
+        Airobot integrates edge-cloud collaboration and federated learning, ensuring both high performance and compliance with privacy constraints. By combining the cloud's task planning capabilities with the edge's lightweight model execution, it forms an intelligent, high-performance, and scalable framework.
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
 
 
 
